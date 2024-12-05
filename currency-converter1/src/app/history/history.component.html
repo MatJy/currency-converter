@@ -1,0 +1,32 @@
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    rel="stylesheet"
+/>
+
+<div class="container mt-4">
+    <h2 class="text-success mb-3">Conversion History</h2>
+    <button class="btn btn-danger mb-3" (click)="clearHistory()">
+        <i class="bi bi-trash"></i>
+    </button>
+
+    <div class="list-group">
+        @for (data of history; track $index) {
+        <div
+            class="list-group-item d-flex justify-content-between align-items-center"
+        >
+            <div>
+                <p class="fs-5 fw-bold text-success mb-0">
+                    {{ data.amount }} {{ data.from }}
+                </p>
+                <p class="mb-0">
+                    =
+                    <span class="fw-bold">{{
+                        data.outcome | number : '1.3-3'
+                    }}</span>
+                    {{ data.to }}
+                </p>
+            </div>
+        </div>
+        }
+    </div>
+</div>
