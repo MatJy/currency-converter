@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Currency Converter** is an app that allows users to convert an amount from one currency to another. It features a clean interface and maintains a history of all conversions.
+The **Currency Converter** is an app that allows users to convert an amount from one currency to another. It features a clean interface and maintains a history of all conversions. Built with Angular
 
 ---
 
